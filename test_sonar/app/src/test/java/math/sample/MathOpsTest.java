@@ -1,6 +1,7 @@
 package math.sample;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
@@ -38,5 +39,34 @@ public class MathOpsTest {
         assertEquals(0, MathOps.multiply(0, 5));
         assertEquals(0, MathOps.multiply(5, 0));
         assertEquals(0, MathOps.multiply(0, 0));
+    }
+
+    @Test
+    void testDividePositiveNumbers() {
+        assertEquals(2, MathOps.divide(6, 3));
+    }
+
+    @Test
+    void testDivideNegativeNumbers() {
+        assertEquals(2, MathOps.divide(-6, -3));
+        assertEquals(-2, MathOps.divide(-6, 3));
+        assertEquals(-2, MathOps.divide(6, -3));
+    }
+
+    @Test
+    void testDivideByOne() {
+        assertEquals(5, MathOps.divide(5, 1));
+        assertEquals(-5, MathOps.divide(-5, 1));
+    }
+
+    @Test
+    void testDivideZeroNumerator() {
+        assertEquals(0, MathOps.divide(0, 5));
+    }
+
+    @Test
+    void testDivideByZeroThrows() {
+        Exception exception = assertThrows(ArithmeticException.class, () -> MathOps.divide(5, 0));
+        assertEquals("Division by zero", exception.getMessage());
     }
 }
