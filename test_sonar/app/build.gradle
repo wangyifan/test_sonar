@@ -54,7 +54,7 @@ sonarqube {
         property "sonar.projectKey", "wangyifan_test_sonar"
         property "sonar.organization", "wangyifan-personal"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.token", "e8e201c2e4067470c04f0dfc03cdd33d5a490824"
+        property "sonar.token", System.getenv("SONARCLOUD_TOKEN")
         property "sonar.coverage.jacoco.xmlReportPaths", "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
         property "sonar.gradle.skipCompile", "true"
     }
