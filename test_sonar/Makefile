@@ -13,7 +13,7 @@ coverage:
 	open app/build/reports/jacoco/test/html/index.html
 
 sonarqube:
-	./gradlew sonarqube
+	./gradlew sonar
 
 clean:
 	./gradlew clean

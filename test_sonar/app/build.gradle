@@ -61,10 +61,11 @@ jacocoTestReport {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "test_sonar"
-        property "sonar.projectName", "test_sonar"
-        property "sonar.host.url", "<SONAR_HOST_URL>"
-        property "sonar.login", "<SONAR_TOKEN>"
+        property "sonar.projectKey", "wangyifan_test_sonar"
+        property "sonar.organization", "wangyifan-personal"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.token", "e8e201c2e4067470c04f0dfc03cdd33d5a490824"
         property "sonar.coverage.jacoco.xmlReportPaths", "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+        property "sonar.gradle.skipCompile", "true"
     }
 }
