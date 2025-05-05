@@ -69,4 +69,23 @@ public class MathOpsTest {
         Exception exception = assertThrows(ArithmeticException.class, () -> MathOps.divide(5, 0));
         assertEquals("Division by zero", exception.getMessage());
     }
+
+    @Test
+    void testSubtractPositiveNumbers() {
+        assertEquals(1, MathOps.subtract(3, 2));
+    }
+
+    @Test
+    void testSubtractNegativeNumbers() {
+        assertEquals(1, MathOps.subtract(-2, -3));
+        assertEquals(-5, MathOps.subtract(-2, 3));
+        assertEquals(5, MathOps.subtract(2, -3));
+    }
+
+    @Test
+    void testSubtractZero() {
+        assertEquals(2, MathOps.subtract(2, 0));
+        assertEquals(-2, MathOps.subtract(0, 2));
+        assertEquals(0, MathOps.subtract(0, 0));
+    }
 }
