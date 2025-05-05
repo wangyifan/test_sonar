@@ -2,4 +2,19 @@
 .gradle
 
 # Ignore Gradle build output directory
-build
+/build/
+/app/build/
+
+# IDE files
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# VSCode settings
+.vscode/
+../.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
