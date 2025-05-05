@@ -16,4 +16,9 @@ public class AppTest {
         // This just ensures main runs without exceptions for coverage
         App.main(new String[]{});
     }
+
+    @Test
+    void testMathOpsConstructor() {
+        new MathOps();
+    }
 }
