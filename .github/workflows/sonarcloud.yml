@@ -37,6 +37,9 @@ jobs:
       - name: Build and test with coverage
         run: ./gradlew build jacocoTestReport
 
+      - name: Unshallow fetch for SonarCloud
+        run: git fetch --prune --unshallow || true
+
       - name: SonarCloud Scan
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
