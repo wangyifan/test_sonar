@@ -1,0 +1,5 @@
+math.sample.MathOps#divide(II)I
+false
+248acc402fbed5eb02daaf52c44ea5f3
+java.lang.ArithmeticException#<init>(Ljava/lang/String;)V
+java.lang.ArithmeticException#instance-init#

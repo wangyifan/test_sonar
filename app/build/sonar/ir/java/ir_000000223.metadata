@@ -1,0 +1,9 @@
+math.sample.App#main([Ljava/lang/String;)V
+false
+395e6b6d0d08cbc1d96ebefc4ea32797
+math.sample.MathOps#add(II)I
+math.sample.MathOps#divide(II)I
+math.sample.MathOps#multiply(II)I
+math.sample.MathOps#subtract(II)I
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V

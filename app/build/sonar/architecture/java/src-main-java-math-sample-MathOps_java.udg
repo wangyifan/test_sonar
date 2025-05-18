@@ -1,0 +1,102 @@
+
+1.0wangyifan_test_sonarJavaFrontend"1747594830545*java2.Bî
++
+&src/main/java/math/sample/MathOps.java2
+
+package4
+
+math.sample5
+
+math.sample.MathOps7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MathOps12
+"
+math.sample.MathOps#add(II)I14
+
+method15
+	
+add16
+'
+!math.sample.MathOps#subtract(II)I18
+
+subtract19
+'
+!math.sample.MathOps#multiply(II)I21
+
+multiply22
+%
+math.sample.MathOps#divide(II)I24
+
+divide25J
+
+1
+12Z
+
+3	
+354j√
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+23:
+232415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+25
+@
+20:
+202115 *
+1
+ 
+(26:3B
+	
+9
+10
+
+
+11
+22
+@
+17:
+171815 *
+1 (26:3B
+	
+9
+10
+
+
+11
+19
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+16
