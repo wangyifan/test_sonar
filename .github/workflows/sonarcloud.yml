@@ -40,4 +40,4 @@ jobs:
       - name: SonarCloud Scan
         env:
           SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
-        run: ./gradlew sonarqube -p app 
+        run: ./gradlew sonarqube 
